@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#577C8E"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/image_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_icon"
+        android:layout_marginTop="20dp"
+        android:onClick="home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/settings_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_bg"
+        app:layout_constraintBottom_toTopOf="@+id/image_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_button"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+        android:id="@+id/sounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sounds:"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/languages"
+        app:layout_constraintStart_toStartOf="@+id/settings_bg"
+        android:layout_marginStart="20dp"
+        android:textColor="#264A77"
+        app:layout_constraintTop_toTopOf="@+id/settings_bg"/>
+
+    <TextView
+        android:id="@+id/languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Languages:"
+        android:layout_marginStart="20dp"
+        android:textColor="#264A77"
+        app:layout_constraintStart_toStartOf="@+id/settings_bg"
+        app:layout_constraintTop_toBottomOf="@+id/sounds"
+        app:layout_constraintBottom_toTopOf="@+id/theme"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme:"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#264A77"
+        app:layout_constraintStart_toStartOf="@+id/settings_bg"
+        app:layout_constraintTop_toBottomOf="@+id/languages"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_bg"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:trackTint="#B9C0C3"
+        app:thumbTint="#577C8E"
+        app:layout_constraintEnd_toEndOf="@+id/settings_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/sounds"
+        app:layout_constraintTop_toTopOf="@id/sounds"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aze"
+        app:layout_constraintEnd_toStartOf="@+id/eng"
+        app:layout_constraintTop_toTopOf="@+id/eng"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eng"
+        android:src="@drawable/aze"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eng"
+        android:id="@+id/eng"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/settings_bg"
+        app:layout_constraintTop_toTopOf="@+id/languages"
+        app:layout_constraintBottom_toBottomOf="@+id/languages"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:trackTint="#B9C0C3"
+        app:thumbTint="#577C8E"
+        app:layout_constraintEnd_toEndOf="@+id/settings_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/theme"
+        app:layout_constraintTop_toTopOf="@id/theme"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

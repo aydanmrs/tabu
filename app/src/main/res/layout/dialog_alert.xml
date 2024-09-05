@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/view_one"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:src="@drawable/dialog_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/restart"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toTopOf="@id/resume"
+            app:layout_constraintEnd_toEndOf="@id/view_one"
+            app:layout_constraintStart_toStartOf="@id/view_one"
+            app:layout_constraintTop_toTopOf="@id/view_one" />
+
+        <ImageView
+            android:id="@+id/resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/resume"
+            app:layout_constraintBottom_toTopOf="@+id/setting"
+            app:layout_constraintEnd_toEndOf="@id/view_one"
+            app:layout_constraintStart_toStartOf="@id/view_one"
+            app:layout_constraintTop_toBottomOf="@id/restart"
+            />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings_btn"
+            app:layout_constraintBottom_toTopOf="@id/quit"
+            app:layout_constraintEnd_toEndOf="@id/view_one"
+            app:layout_constraintStart_toStartOf="@id/view_one"
+            app:layout_constraintTop_toBottomOf="@id/resume"
+            />
+
+        <ImageView
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quit"
+            app:layout_constraintBottom_toBottomOf="@id/view_one"
+            app:layout_constraintEnd_toEndOf="@id/view_one"
+            app:layout_constraintStart_toStartOf="@id/view_one"
+            app:layout_constraintTop_toBottomOf="@id/setting"
+            android:layout_marginBottom="40dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

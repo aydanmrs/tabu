@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">taboo_new</string>
+    <string name="text1">Setup: Split into teams and grab your phones. Open the Taboo app and get ready to play.</string>
+    <string name="text2">Objective: Get your team to guess the word on your screen without using the "taboo" words listed below it.</string>
+    <string name="text3">Gameplay: One player gives clues without saying the taboo words. The app will buzz if you slip up.</string>
+    <string name="text4">Scoring: Earn points for every correct guess. Lose points for using a taboo word or skipping a card.</string>
+    <string name="text5">Winning: The team with the most points wins! Enjoy the fun and challenge your friends to a rematch!</string>
+    <string name="time">Time</string>
+    <string name="pass_count">Pass Count</string>
+    <string name="game_level">Game level</string>
+</resources>

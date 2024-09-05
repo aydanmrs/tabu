@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "538078004017",
+    "project_id": "tabuoyundeneme",
+    "storage_bucket": "tabuoyundeneme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538078004017:android:acd525c6bf339737aee610",
+        "android_client_info": {
+          "package_name": "com.example.taboo_new"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwBYWGUIQ0mlpsY8QPoiSdML6ajee8Pi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
